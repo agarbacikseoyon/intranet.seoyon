@@ -1,0 +1,17 @@
+*.iml
+all/*
+daedong/*
+doc/*
+files/*
+gif/*
+glpi/*
+glpi_9_1/*
+ico/*
+img/*
+injection/*
+install/*
+new/*
+phpMyAdmin/*
+przelewy/*
+serwis_daniel/*
+Strona/*
