@@ -54,7 +54,7 @@ select			{ text-align: left; font-family: Arial, Helvetica, sans-serif; font-siz
  $uzytkownik	= 'intranet';
  $haslo			= 'j9qdkdx3wr';
 $plus="+48";
-$pole = '';
+$pole = 'imie';
 
 $pole = $_GET["pole"];
 $kwerendaGlobalna;
@@ -82,7 +82,8 @@ if ($mysqli->connect_errno) {
 }else{
     //@mysqli_select_db($baza) or die("Nie odnaleziono bazy danych!");
     /* Select queries return a resultset */
-    if ($result = $mysqli->query("SELECT * FROM `contact` ORDER BY `imie` ASC ")) {
+    //                            SELECT * FROM `contact` ORDER BY `imie` ASC
+    if ($result = $mysqli->query("SELECT * FROM `contact` $pole ASC")) {
         $kwerendaGlobalna = $result;
         echo "<TABLE BORDERCOLOR='#000000' CELLSPACING='2' WIDTH='961' BORDER='0' ALIGN='center'>
         <TR><TD COLSPAN='10' ALIGN='center'></TD></TR>
