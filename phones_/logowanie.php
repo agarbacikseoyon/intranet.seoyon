@@ -1,4 +1,5 @@
 <?php
+
  include "log.php";
  $luzytkownik	= $_POST['luzytkownik'];
  $lhaslo		= $_POST['lhaslo'];
